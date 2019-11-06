@@ -1,0 +1,15 @@
+﻿include partials/header.pug
+
+block content
+ h1 Users
+ table
+    thead
+        th User ID
+        th User Name
+
+    tbody
+        each user in users
+            tr
+                td #{user.id}
+                td #{user.username}
+include partials/footer.pug
